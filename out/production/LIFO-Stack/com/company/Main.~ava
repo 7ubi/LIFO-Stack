@@ -1,0 +1,38 @@
+package com.company;
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        anbn('(', ')');
+    }
+
+    static void anbn(char first, char second){                                 //Kellerautomat {a^nb^n}
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Input:");
+        String Input = scanner.nextLine();
+        Stack<Character> s = new Stack<Character>();
+
+        int state = 0;
+        for(int i = 0; i < Input.length(); i++){
+            char in = Input.charAt(i);
+            if (in == second) {
+                state = 1;
+            }
+            if (state == 0 && in == first) {
+                s.push(in);
+            }else if (state == 1 && in == second){
+                if (s.pop() == null) {
+                    System.out.println("Fehler");
+                    return;
+                }
+            }
+        }
+
+        if(s.isEmpty()){
+            System.out.println("Passt");
+        }else {
+            System.out.println("Fehler");
+        }
+    }
+}

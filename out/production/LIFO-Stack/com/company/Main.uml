@@ -1,0 +1,27 @@
+﻿[Files]
+File0=E:\LIFO-Stack\src\com\company\Main.java
+
+[Box:  - com.company.Main]
+X=20
+Y=40
+ShowParameter=1
+ShowIcons=0
+FontSize=12
+FontName=Segoe UI
+
+[Diagram]
+comments=0
+OffsetX=0
+OffsetY=0
+Visibility=0
+ShowParameter=4
+SortOrder=0
+ShowIcons=0
+ShowConnections=0
+Fontname=Segoe UI
+Fontsize=12
+ShowObjectDiagram=0
+
+[Interactive]
+I0=
+
